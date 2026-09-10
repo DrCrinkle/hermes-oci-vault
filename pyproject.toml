@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "hermes-oci-vault"
+version = "0.1.0"
+description = "OCI Vault secret source plugin for Hermes Agent"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+license = { text = "MIT" }
+authors = [{ name = "DrCrinkle" }]
+dependencies = ["oci==2.181.1"]
+
+[project.entry-points."hermes_agent.plugins"]
+oci_vault = "hermes_oci_vault:register"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/hermes_oci_vault"]

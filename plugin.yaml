@@ -5,7 +5,7 @@ api_version: 1
 description: "Oracle Cloud Infrastructure Vault SecretSource using native SDK authentication."
 author: "DrCrinkle"
 license: MIT
-homepage: https://github.com/DrCrinkle/hermes-agent
+homepage: https://github.com/DrCrinkle/hermes-oci-vault
 tags: [secrets, oci, vault]
 kind: backend
 python_dependencies:
